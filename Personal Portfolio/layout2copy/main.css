@@ -1,0 +1,488 @@
+@media all {
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+    header,
+    main,
+    section,
+    aside,
+    nav,
+    footer {
+        display: block;
+    }
+
+    h1,
+    h2,
+    h3 {
+        margin: 0;
+    }
+
+    a:focus {
+        outline: 2px dotted #000;
+        outline-offset: 5px;
+    }
+
+    #jumpToAnchor {
+        position: absolute;
+        top: 10px;
+        left: 100px;
+        display: block;
+        z-index: 15;
+        display: none;
+    }
+
+    #jumpToAnchor:focus {
+        display: block;
+    }
+
+}
+
+@media screen {
+
+    /*Masthead*/
+    #masthead {
+        position: relative;
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    #heroImage {
+        background: url(layout2-assets/hero-image-greece.webp) center no-repeat;
+        background-size: cover;
+        background-position: top center;
+        position: relative;
+        height: 550px;
+    }
+
+    #logo {
+        background: url(layout2-assets/go-greek-tours.png) no-repeat;
+        width: 100px;
+        height: 100px;
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    h1 {
+        color: #00214F;
+        font-size: 40px;
+        line-height: 1.3;
+        font-weight: 400;
+        font-family: 'Roboto Slab', serif;
+    }
+
+    #searchGreeceDiv {
+        width: 90%;
+        padding: 320px 0 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .searchForm {
+        padding-right: 50px;
+    }
+
+    .searchForm input {
+        width: 40%;
+        font-size: 16px;
+        line-height: 1.3;
+        font-family: 'Roboto Slab', serif;
+    }
+
+    .searchForm input:focus {
+        outline: 2px solid #000;
+    }
+
+    .searchForm button:focus {
+        outline: 2px solid #fff;
+    }
+
+    .searchForm button {
+        background-color: #00214f;
+        color: #fff;
+        position: absolute;
+    }
+
+    .searchForm input,
+    .searchForm button {
+        padding: 10px 30px;
+        height: 40px;
+    }
+
+    #searchGreeceH1 {
+        margin-bottom: 10px;
+    }
+
+
+    /*Greek History Section*/
+    #greekHistorySection {
+        width: 1000px;
+        background-color: #edf3ef;
+        margin: 0 auto;
+    }
+
+    #historyGridContainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 15px;
+        padding: 80px 110px;
+    }
+
+    #greekHistoryImg {
+        background: url(layout2-assets/greek-history.webp) center no-repeat;
+    }
+
+    #santoriniImg {
+        background: url(layout2-assets/santorini.webp) center no-repeat;
+    }
+
+    #monasticSplendorImg {
+        background: url(layout2-assets/greek-monastery.webp) center no-repeat;
+    }
+
+    #greekHistoryImg,
+    #santoriniImg,
+    #monasticSplendorImg {
+        display: block;
+        height: 200px;
+        background-size: cover;
+        background-position: top center;
+    }
+
+    #greekHistoryDiv h2,
+    #santoriniDiv h2,
+    #monasticSplendorDiv h2 {
+        color: #666;
+        font: 700 16px/1.3 'Roboto Slab', serif;
+    }
+
+    .plusIcon {
+        background: url(layout2-assets/plus-icon.png) center no-repeat;
+        display: block;
+        height: 50px;
+        background-position: top center;
+    }
+
+    #greekHistoryPara,
+    #santoriniPara,
+    #monasticSplendorPara {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #greekHistorySection p {
+        padding: 0 20px;
+    }
+
+    /*Quotation Section*/
+    #greeceQuoteSection {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    #greeceQuoteSection h2 {
+        color: #666;
+        font-size: 34px;
+        line-height: 1.3;
+        font-weight: 700;
+        font-family: 'Arima Madurai', cursive;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    blockquote {
+        font-size: 18px;
+        text-align: center;
+        display: block;
+        margin-top: 10px;
+        color: #666;
+        font-family: 'Arima Madurai', cursive;
+        font-weight: 700;
+    }
+
+    #greeceQuoteDiv {
+        width: 80%;
+        margin: 80px 0;
+        padding: 0 120px;
+    }
+
+    /*Explore Cafe Culture Section*/
+    #cafeCultureSection {
+        position: relative;
+        margin: 0 auto;
+        width: 1000px;
+        height: 600px;
+        background: url(layout2-assets/cafe-culture.webp) center no-repeat;
+        background-size: cover;
+        background-position: top center;
+    }
+
+    #cafeDivH2 {
+        position: absolute;
+        top: 220px;
+        right: 80px;
+    }
+
+    #cafeDivH2 a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        font: 400 26px/1.3 'Arima Madurai', cursive;
+        width: 200px;
+        background-color: #987B31;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    #cafeDivH2 a:hover,
+    #cafeDivH2 a:focus {
+        background-color: #000;
+    }
+
+    /*Travel Smart Section*/
+    #travelSection {
+        position: relative;
+        width: 1000px;
+        background-color: #448CCB;
+        margin: 0 auto;
+    }
+
+    #travelSection h2 {
+        color: #fff;
+        font: 400 34px/1.3 'Roboto Slab', serif;
+        padding-bottom: 30px;
+    }
+
+    #travelSectionDiv {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    #travelSmartDiv {
+        padding: 80px 110px;
+    }
+
+    .travel {
+        display: block;
+        text-decoration: none;
+        background: #fff;
+        color: #1d6bae;
+        font-size: 22px;
+        padding: 40px;
+    }
+
+    /*Footer Section*/
+    footer {
+        width: 1000px;
+        padding: 80px 110px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    #footerGridContainer {
+        display: grid;
+        grid-template-columns: [col1-start] 1.5fr [col2-start] 2fr [col3-start] 1fr;
+    }
+
+    footer h2 {
+        color: #666;
+        font: 400 22px/1.3 'Arima Madurai', cursive;
+        margin-bottom: 0.5em;
+    }
+
+    footer nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    footer nav li {
+        margin-bottom: 1em;
+    }
+
+    footer nav a {
+        text-decoration: none;
+        color: #666;
+    }
+
+    footer nav a:hover,
+    footer nav a:focus {
+        color: #000;
+    }
+
+    #footerFormDiv input {
+        width: 90%;
+        border: 1px solid #000;
+        padding: 5px;
+        margin-bottom: 15px;
+    }
+
+    #footerFormDiv input:focus {
+        outline: 2px solid #000;
+    }
+
+    #footerFormDiv button {
+        color: #fff;
+        background-color: #448CCB;
+        padding: 5px 15px;
+        cursor: pointer;
+    }
+
+    #footerFormDiv button:hover,
+    #footerFormDiv button:focus {
+        background-color: #000;
+    }
+
+    #twitterImg {
+        background: url(layout2-assets/twitter-logo.png) no-repeat;
+        height: 50px;
+        display: block;
+        background-position: top right;
+        margin-bottom: 40px;
+    }
+
+    #copyrightText {
+        text-align: right;
+    }
+
+}
+
+@media screen and (max-width: 1010px) {
+
+    #masthead,
+    #greekHistorySection,
+    #greeceQuoteSection,
+    #cafeCultureSection,
+    #travelSection,
+    footer {
+        width: auto;
+    }
+
+    #historyGridContainer {
+        padding: 80px 50px;
+    }
+
+    #travelSectionDiv {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    #travelSmartDiv {
+        padding: 80px 50px;
+    }
+
+    .travel {
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    footer {
+        padding: 80px 50px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    #greeceQuoteDiv {
+        width: auto;
+    }
+
+    #footerGridContainer {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    #twitterImg {
+        background-position: top left;
+    }
+
+    #copyrightText {
+        text-align: left;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    #historyGridContainer {
+        padding: 50px;
+    }
+
+    #travelSectionDiv {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        padding: 50px;
+    }
+
+    #cafeDivH2 {
+        top: 245px;
+        right: 200px;
+    }
+
+    #travelSmartDiv {
+        padding: 50px;
+    }
+
+    .searchForm input {
+        width: 70%;
+    }
+
+}
+
+@media print {
+
+    body,
+    #greeceQuoteSection h2 {
+        font-size: 12pt;
+    }
+
+    h1 {
+        font-size: 28pt;
+    }
+
+    h2 {
+        font-size: 18pt;
+    }
+
+    header,
+    #footerNavDiv,
+    #mailingListDiv {
+        display: none;
+    }
+
+    a {
+        color: #000;
+    }
+
+    .travel {
+        display: block;
+        margin-bottom: 20pt;
+    }
+
+    #cafeDivH2 h2,
+    #travelSection h2 {
+        margin-bottom: 10pt;
+    }
+
+    #greeceQuoteSection h2 {
+        font-weight: 400;
+    }
+
+    blockquote {
+        display: block;
+        margin-top: 0;
+    }
+
+}

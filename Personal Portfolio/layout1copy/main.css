@@ -1,0 +1,191 @@
+@media all {
+
+    body {margin: 0; padding: 0; font-family: 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: 400; line-height: 1.3;}
+    header, footer, nav, section, aside {display: block;}
+    h2 {font-family: 'Averia Serif Libre', cursive; font-weight: 300; font-size: 35px; line-height: 1;}
+    h1, h2, h3 {margin: 0;}
+    h3 {font-size: 16px;}
+}
+
+    
+@media screen {
+
+    /*Masthead*/
+    header {position: relative;}
+    #barnImage {background: url(layout1-assets/barn-background.webp) center no-repeat; background-size: cover; background-position: center 35%; height: 450px;}
+    h1 {font-family: 'Economica', sans-serif; font-weight: 700; font-size: 38px; line-height: 35px; text-align: center; padding: 20px 0; width: 150px; margin: 0 auto; text-transform: uppercase;}
+    h1 span {display: block; font-weight: 400; font-size: 30px; line-height: 35px;}
+    ul {list-style: none; margin: 0; padding: 0;}
+    ul a {text-decoration: none; color: #000; font-family: 'Averia Serif Libre', cursive; font-size: 16px; font-weight: 700; line-height: 1; margin: 0 15px 0 15px;}
+    ul a:hover {color: #980404;}
+    ul a:focus {color: #980404;}
+    .topNavFlex {display: flex; justify-content: center;}
+
+    /*Virtual Tour Section*/
+    #virtualTour {display: flex; flex-direction: column; justify-content: center; align-items: center; height: 376px;}
+    #virtualTour h2 {color:#980404; margin-bottom: 50px;}
+    #virtualTour a {color: #980404; border: 1px solid #980404; text-decoration: none; padding: 15px 30px; font-size: 14px; text-transform: uppercase;}
+    #virtualTour a:hover, #virtualTour a:focus {color: #fff; background-color: #980404;}
+
+    /*Farm Fresh Section*/
+    #farmFreshSection {display: flex; justify-content: center; width: 1040px; margin: 0 auto;}
+    #chickenImg {background: url(layout1-assets/chicken.webp) no-repeat;}
+    #squashImg {background: url(layout1-assets/squash.webp) no-repeat;}
+    #farmFreshDiv h2 {margin-bottom: 20px;}
+    #chickenImg, #squashImg {background-size: cover; background-position: center; display: block; width: 500px; height: 350px; margin-bottom: 40px;}
+    .farmFreshPara {width: 300px; margin-bottom: 40px; line-height: 1.8; padding: 0 100px;}
+    #freshEggs, #freshVegetables {text-align: center;}
+
+    /*Line Break*/
+    #lineBreak {border: 3px solid #fc0; margin-bottom: 60px;}
+
+    /*Saturday Market Section*/
+    #marketSection {width: 1040px; margin: 0 auto;}
+    #beansImg {background: url(layout1-assets/beans.webp) no-repeat; background-size: cover; background-position: center; display: block; height: 350px;}
+    #marketDiv {display: flex; justify-content: space-between; margin-bottom: 40px;}
+    #marketDiv h2 {line-height: 1.3;}
+    .freshMarket {width: 48%;}
+    .freshMarket h2 {margin-bottom: 40px;}
+    .marketInfo {margin: 0;}
+    .marketInfo, .activities p {text-transform: uppercase;}
+    #activitiesDiv {display: flex; justify-content: space-between; margin-bottom: 60px;}
+    #music {background: url(layout1-assets/guitar.webp) no-repeat}
+    #kids {background: url(layout1-assets/face-painting.webp) no-repeat}
+    #food {background: url(layout1-assets/cauliflower.webp) no-repeat}
+    #music, #kids, #food {background-size: cover; background-position: center; display: block; height: 250px; margin-bottom: 20px;}
+    .activities {width: 31%;}
+    .activities p {text-align: center;}
+
+    /*FarmShare Section*/
+    #farmShareSection {margin-bottom: 60px;}
+    #vegetablesImg {background: url(layout1-assets/vegetables.webp) center no-repeat; background-size: cover; background-position: center; display: block; height: 230px;}
+    #farmShares {text-decoration: none; color: #fff; font-size: 40px; text-transform: uppercase;}
+    #backgroundColorCSA {background-color: #530001; padding: 60px 0 60px 0;}
+    #farmSharesH2 {text-align: center;}
+    #farmInfoDiv {width: 1040px; margin: 0 auto; text-align: center;}
+    #farmSectionPara {margin: 60px 0 40px 0; padding: 0 100px; width: 80%; font-weight: 300; font-size: 30px; line-height: 1.3; font-family: 'Averia Serif Libre', cursive;  text-align: center;}
+    .farmForm {margin-bottom: 60px; width: 50%; position: relative; margin: 0 auto;}
+    .farmForm input {box-sizing: border-box; width: 100%; border: none; border-bottom: 1px solid #363636; padding: 10px 5px;}
+    .farmForm button {background: url(layout1-assets/sprite.webp) no-repeat; cursor: pointer; position: absolute; right: 5px; top: 5px; display: inline-block; border: 0; width: 30px; height: 20px;}
+
+
+    /*Events Section*/
+    #eventsContainer {display: flex; justify-content: space-between;}
+    #eventsBackground {background-color: #228500; color: #fff; margin: 0 auto; height: 300px; padding: 60px 0 60px 0;}
+    #eventsContent {width: 1040px; margin: 0 auto;}
+    #eventsBackground h2 {margin-bottom: 40px;}
+    .events {width: 30%;}
+    .events h3 {text-transform: uppercase;}
+    .eventsPara {line-height: 1.6; font-weight: 300;}
+
+
+    /*Footer*/
+    footer {margin: 0 auto; width: 1040px;}
+    #footerDiv {display: flex; justify-content: space-between; margin: 60px 0 60px 0;}
+    #footerNav li {margin-bottom: 1em;}
+    .icons {background: url(layout1-assets/sprite.webp) no-repeat; display: inline-block; width: 50px; height: 50px; padding-right: 15px;}
+    .icons:nth-child(3) {padding: 0;}
+    #instagram {background-position: -6px -115px;}
+    #twitter {background-position: -6px -250px;}
+    #facebook {background-position: -6px -395px;}
+    .cardamonInfo {width: 32%;}
+    #socialMedia {text-align: right;}
+    #cardamonAddress p:nth-child(1) {font-family: 'Economica', sans-serif; font-weight: 700; font-size: 38px; line-height: 35px; text-align: center; margin: 0 auto; margin-bottom: 40px;}
+    #cardamonAddress p:nth-child(2), #cardamonAddress p:nth-child(3) {text-align: center;}
+    #cardamonAddress span {display: block; font-weight: 400; font-size: 30px; line-height: 35px;}
+
+}
+
+/*First Breakpoint 1050px*/
+@media screen and (max-width: 1050px) {
+    #farmFreshSection, #marketSection, #farmInfoDiv, #eventsContent, footer {width: auto; margin: 0 30px 0 30px;}
+    #virtualTour {margin: 0 30px 0 30px;}
+    #chickenImgDiv, #chickenImg, #squashImgDiv, #squashImg, .farmFreshPara {width: 100%;}
+    .farmFreshPara {padding: 0;}
+}
+
+/*Second Breakpoint 800px*/
+@media screen and (max-width: 800px) {
+    #farmFreshSection {flex-wrap: wrap;}
+    #eventsContainer {flex-wrap: wrap;}
+    #eventsBackground {height: auto;}
+    .events {width: 45%;}
+    .events:nth-child(3) {margin-top: 40px;}
+
+}
+
+/*Third Breakpoint 700px*/
+@media screen and (max-width: 700px) {
+    .cardamonInfo {width: 48%;}
+    #footerDiv {flex-wrap: wrap;}
+    #socialMedia {text-align: left;}
+
+}
+
+/*Fourth Breakpoint 600px*/
+@media screen and (max-width: 600px) {
+    .topNavFlex {flex-wrap: wrap; text-align: center;}
+    .topNavFlex li {width: 50%;}
+    .topNavFlex li:nth-child(1) {margin-bottom: 10px;}
+    #activitiesDiv {flex-wrap: wrap;}
+    .activities {width: 48%;}
+    .activities:nth-child(1) {margin-bottom: 40px;}
+    #farmSectionPara {width: 100%; padding: 0;}
+    .farmForm {width: 80%;}
+    .events {width: 100%;}
+    .events {margin-bottom: 20px;}
+    .events:nth-child(3) {margin-top: 0;}
+
+}
+
+@media screen and (max-width: 500px) {
+    #marketDiv, #activitiesDiv {flex-wrap: wrap;}
+    .freshMarket, #beansImg, .activities {width: 100%;}
+    .activities:nth-child(1), .activities:nth-child(2) {margin-bottom: 20px;}
+    .freshMarket {margin-top: 40px;}
+    .cardamonInfo {width: 100%;}
+    #footerNav, #socialMedia {text-align: center;}
+    #footerNav, #cardamonAddress {margin-bottom: 40px;}
+
+
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    #barnImage {background: url(layout1-assets/barn-background.jpg) center no-repeat;}
+    #chickenImg {background: url(layout1-assets/chicken.jpg) no-repeat;}
+    #squashImg {background: url(layout1-assets/squash.jpg) no-repeat;}
+    #beansImg {background: url(layout1-assets/beans.jpg) no-repeat;}
+    #music {background: url(layout1-assets/guitar.jpg) no-repeat;}
+    #kids {background: url(layout1-assets/face-painting.jpg) no-repeat;}
+    #food {background: url(layout1-assets/cauliflower.jpg) no-repeat;}
+    #vegetablesImg {background: url(layout1-assets/vegetables.jpg) center no-repeat;}
+    .farmFormButton {background: url(layout1-assets/sprite.png) no-repeat;}
+    .icons {background: url(layout1-assets/sprite.png) no-repeat;}
+
+}
+
+@media print {
+    body {font-size: 12pt;}
+    a {color: #000;}
+    h1 {font-family: 'Economica', sans-serif; font-weight: 700; line-height: 35pt; font-size: 28pt; text-align: center; margin-bottom: 40pt;}
+    h1 span {font-size: 24pt; display: block;font-weight: 400; line-height: 35pt;}
+    h2 {font-size: 18pt;}
+    h3 {font-size: 15pt;}
+    #masthead nav, #footerNav, .farmForm {display: none;}
+    footer {padding-top: 40pt;}
+    #virtualTour, #virtualTour h2 {margin-bottom: 20pt;}
+    .freshMarket p {margin-bottom: 0;}
+    #eventsContent h2 {margin-bottom: 20pt;}
+    #cardamonAddress p:nth-child(1) {display: none;}
+    .marketInfo {line-height: 0;}
+    .marketInfo:nth-child(4) {padding-bottom: 20pt;}
+    .activities p {line-height: 0;}
+    .freshMarket h2 {margin-bottom: 20pt;}
+    #farmSharesH2 {margin-top: 20pt;}
+    
+}
+
+
+
+
+

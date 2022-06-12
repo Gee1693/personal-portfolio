@@ -1,0 +1,119 @@
+@media all {
+
+    body {margin: 0; padding: 0; font: 400 18px/1.3 'PT Sans', serif;}
+    header, main, nav, aside, section, footer {display: block;}
+    ul {margin: 0; padding: 0; list-style: none;}
+    h1 {font-size: 24px; font-weight: 700; line-height: 1.3;}
+    #jumpToAnchor {padding-top: 10px; padding-left: 10px; color: #000; display: none;}
+    #topLeftNav a:focus, #topRightNav a:focus, #coffeeLogoAnchor:focus, #jumpToAnchor:focus, #chemexImageAnchor:focus {outline: 2px solid #502712; outline-offset: 3px;}
+    #jumpToAnchor:focus {display: inline;}
+    .callouts a:focus, #instagram:focus, #twitter:focus, #facebook:focus {outline: 2px solid #fff; outline-offset: 3px;}
+    .assistText {font-size: 0; width: 0; height: 0;}
+}
+
+@media screen {
+
+    /*Masthead*/
+    #masthead {margin: 30px 0;}
+    #logoDiv {width: 200px;}
+    #topLeftNav a, #topRightNav a {color: #502712; margin-right: 30px; font-size: 16px;}
+    #topLeftNav a:hover, #topRightNav a:hover {color: #000;}
+    #menuSelect {display: none;}
+    #coffeeLogoDiv {text-align: center;}
+
+    /*Hero Image Section*/
+    #heroImageSection {background: url(layout3-images/caturra-coffee-hero-image.webp) center no-repeat; background-size: cover; background-position: center; height: 475px; border-top: 20px solid #502712}
+    
+    /*Callouts Section*/
+    #calloutsSection {margin: 60px 0;}
+    #bakedGoodsDiv {padding-left: 90px;}
+    .callouts {background-color: #502712; height: 280px; padding: 40px 20px; text-align: center;}
+    .callouts h1, .callouts p, .callouts a {color: #fff;}
+    .callouts p {padding-bottom: 20px;}
+    .callouts a {text-transform: uppercase;}
+    .drinksPrice {text-align: center;}
+    .bakedGoodsPrice {text-align: right;}
+    
+
+    /*Coffee Window Image Section*/
+    #coffeeWindowImage {background: url(layout3-images/caturra-coffee-view-to-street.webp) center no-repeat; background-size: cover; background-position: center; height: 590px; margin-bottom: 40px;}
+
+    /*New Menu Items Section*/
+    #newMenuDivH1 {position: relative; text-align: center; background-color: #502712; padding: 25px; margin-bottom: 40px; color: #fff; text-transform: uppercase;}
+    #newMenuDivH1 h1 {font-size: 28px;}
+    #borderLine {position: absolute; top: 1715px; border: 1px solid #502712; width: 100%;}
+    #newMenuDiv h2 {font-size: 22px; color: #502712; margin-bottom: 15px;}  
+    #newMenuDiv .menuItems {font-size: 16px;}
+    #menuItemsDiv {border-bottom: 1px solid #502712;}
+    #drinksDiv {margin-bottom: 40px;}
+    .menuItems div {margin-bottom: 15px;}
+
+    /*Chemex Section*/
+    #chemexImageContainer {margin: 0 auto; text-align: center;}
+    #chemexImage {width: 100%; height: auto; margin: 60px 0;}
+
+    /*Footer*/
+    #footerSectionDiv {background-color: #502712; padding-top: 50px; padding-bottom: 50px;}
+    #footerSectionDiv p {color: #fff;}
+    #socialMedia {margin-bottom: 15px;}
+    .address p {margin-bottom: 0;}
+    .address p:nth-child(2) {margin-bottom: 20px;}
+    abbr[title] {text-decoration: none;}
+    #about {text-decoration: none;}
+    #instagram, #twitter, #facebook {background: url(layout3-images/social-media-icons.webp) no-repeat; display: inline-block; width: 50px; height: 50px; margin-right: 5px;}
+    #twitter {background-position: -65px;}
+    #facebook {background-position: -125px;}
+    #copyright {color: #fff;}
+
+}
+
+@media screen and (max-width: 1070px) {
+    
+    #topLeftNav a, #topRightNav a {margin-right: 20px;}
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .address:nth-child(1), .address:nth-child(2) {margin-bottom: 30px;}
+    .callouts {height: auto;}
+    #coffeeLogoImage {width: 50%; height: auto;}
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .callouts {padding-top: 60px; margin-bottom: 15px;}
+    #topLeftNav, #topRightNav {display: none;}
+    #menuSelectContainer {text-align: center;}
+    #menuSelect {display: inline-block; width: 70%; background-color: #e5e5e5;}
+    #menuSelectForm {margin-top: 30px;}
+    #borderLine {top: 2278px;}
+    .drinksPrice, .bakedGoodsPrice {text-align: right;}
+    #bakedGoodsDiv {padding-left: 10px;}
+     #coffeeLogoImage {width: auto; height: auto;}
+    #chemexImage {padding: 0 15px;}
+
+    
+}
+
+@media print {
+
+    body {font-size: 15pt;}
+    h1 {font-size: 20pt; font-weight: 400;}
+    h2 {font-size: 17pt;}
+    a {color: #000;}
+    #calloutsSection, #newMenuSection {margin-bottom: 40pt;}
+    nav, #menuSelect, #chemexImage {display: none;}
+    #coffeeLogoDiv {visibility: visible; height: 50pt; display: block; width: 100pt;}
+    #coffeeLogo {visibility: visible; display: block; height: 50pt; width: 100pt;}
+    #newMenuSection {border-bottom: 1pt solid #502712;}
+    #bakedGoodsDiv {padding-bottom: 40pt;}
+    .address p {margin-bottom: 0;}
+    .address p:nth-child(2), .address p:nth-child(4) {margin-bottom: 20px;}
+    abbr[title] {text-decoration: none;}
+    
+}
+
