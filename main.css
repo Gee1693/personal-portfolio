@@ -1,0 +1,101 @@
+@media all {
+
+    :root {
+        --primary-txt-color: #ccd6f6;
+        --secondary-txt-color: #8892b0;
+    }
+
+    body {margin: 0; padding: 0; background-color: #0a192f;}
+    header, main, section, nav, aside, article, footer {display: block;}
+    ul {margin: 0; padding: 0; list-style: none;}
+    h1, h2 {margin: 0;}
+    #nameSection, #aboutSection {padding: 0 30px;}
+}
+
+@media screen {
+
+
+    /*Masthead Section*/
+    #masthead {display: flex; justify-content: flex-end;}
+    #headerNav {padding: 20px;}
+    #masthead nav a {text-decoration: none; color: #b2b2b2; margin-right: 20px;}
+    #masthead nav a:hover, #masthead nav a:focus {color: #64ffda;}
+    .lightTheme #masthead nav a:hover, .lightTheme #masthead nav a:focus {color: #48cae4;}
+    .flex {display: flex; justify-content: flex-end;}
+    
+    
+    /*Name Section*/
+    #nameSection {margin: 0 auto;}
+    #nameSection p:first-child {color: #64ffda; font-size: 20px;}
+    .lightTheme #nameSection p:first-child {color: #48cae4;}
+    #nameSection p:nth-child(4) {color: #8892b0; font-size: 20px; line-height: 1.3; width: 700px; margin-bottom: 40px;}
+    #nameSection h1, #nameSection h2 {font: 700 80px/1.3 'Roboto', sans-serif;}
+    #nameSection h1 {color: var(--primary-txt-color);}
+    .lightTheme #nameSection h1 {color: #ccc;}
+    #nameSection h2 {color: #8892b0;}
+    #resumeAnchor {text-decoration: none; color: #64ffda; padding: 10px; border: 1px solid #64ffda;}
+    .lightTheme #resumeAnchor {color: #48cae4; border: 1px solid #48cae4;}
+
+    /*About Me Section*/
+    #aboutSection {margin: 0 auto; margin-top: 60px;}
+    #aboutSection h2 {color: #ccd6f6; text-align: center;}
+    #aboutSection p {color: #8892b0; line-height: 1.3; font-size: 18px;}
+    
+    /*Projects Section*/
+    #projectsSection {margin-bottom: 60px;}
+    #projectsSection h2 {text-align: center; color: #ccd6f6; margin: 100px 0 18px 0;}
+    #projectOneImage {background: url(images/bucket1.jpg) center no-repeat;}
+    #projectTwoImage {background: url(images/bucket2.jpg) center no-repeat;}
+    #projectThreeImage {background: url(images/bucket3.jpg) center no-repeat; background-position: 0 0;}
+    #projectOneImage, #projectTwoImage, #projectThreeImage {height: 100px; background-size: cover; display: block;}
+    .container {display: flex; justify-content: center; flex-wrap: wrap; gap: 50px;}
+    .projectsAnchor {display: block; padding-top: 30px; text-decoration: none; color: #ccd6f6;}
+    .projectsAnchor:hover, .projectsAnchor:focus {color:#64ffda;}
+    .projectsDiv {width: 250px; height: 250px; background-color: #112240; padding: 20px;}
+    .projectsIcon {display: block; height: 50px;}
+    .lightTheme .projectsDiv {background-color: #ccc;}
+    .lightTheme .projectsAnchor {color: #2b2d42;}
+    .lightTheme .projectsAnchor:hover, .lightTheme .projectsAnchor:focus {color:#48cae4;}
+
+    /*Contact Section*/
+    #contactSection h2 {color: #ccd6f6; text-align: center; margin-bottom: 20px;}
+    #contactSection p {color: #8892b0; width: 400px; text-align: center; margin: 0 auto; font-size: 18px;}
+    #contactAnchor {text-decoration: none; color: #64ffda; padding: 10px; border: 1px solid #64ffda;}
+    .lightTheme #contactAnchor {color: #48cae4; border: 1px solid #48cae4;}
+    #contactBtnDiv {text-align: center; margin: 30px 0 60px 0;}
+
+    /*JavaScript Controls*/
+    .themeBtn {position: absolute; top: 60px; right: 40px; color: #64ffda; border: 1px solid #64ffda; cursor: pointer; padding: 10px;}
+    .lightTheme .themeBtn {color: #48cae4; border: 1px solid #48cae4;}
+    .lightTheme {background-color: #e5e5e5;}
+    .darkTheme {background-color: #0a192f;}
+    .lightTheme #aboutSection h2, .lightTheme #projectsSection h2, .lightTheme #contactSection h2 {color: #a2a2a2;}
+    
+}
+
+/* @media screen and (max-width: 1030px) {
+
+    #nameSection, #aboutSection {padding: 0 30px;}
+
+} */
+
+@media screen and (max-width: 835px) {
+
+    #nameSection h2 {font-size: 60px; width: 600px;}
+
+}
+
+@media screen and (max-width: 750px) {
+
+    #nameSection p:nth-child(4) {width: auto;}
+
+}
+
+@media screen and (max-width: 645px) {
+
+    #nameSection h1 {font-size: 60px;}
+    #nameSection h2 {width: 600px; font-size: 40px;}
+
+}
+
+
